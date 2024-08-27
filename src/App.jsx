@@ -24,7 +24,7 @@ const App = ()=> {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Hello Worlk</h1>
+      <h1>CHÀO CẬU</h1>
         <MyComponent/>
         <SecondComponent/>
         <ThirdComponent/>
