@@ -1,21 +1,6 @@
 # React Ultimate Starter Template
-Template này được sử dụng cho series React Ultimate (Vite) của tác giả Hỏi Dân IT (Eric)
+Template này được sử dụng cho series React Ultimate (Vite) 
 
-### Môi trường chạy dự án: Node.js v20.14.0
-https://nodejs.org/download/release/v20.14.0/
-
-## Về tác giả
-Mọi thông tin về Tác giả Hỏi Dân IT, các bạn có thể tìm kiếm tại đây:
-
-Website chính thức: https://hoidanit.vn/
-
-Youtube “Hỏi Dân IT” : https://www.youtube.com/@hoidanit
-
-Tiktok “Hỏi Dân IT” :  https://www.tiktok.com/@hoidanit
-
-Fanpage “Hỏi Dân IT” : https://www.facebook.com/askITwithERIC/
-
-Udemy Hỏi Dân IT: https://www.udemy.com/user/eric-7039/
 
 ===
 
@@ -33,3 +18,11 @@ Cách chạy tại chế độ production:
 3. Update file .env.production (nếu cần thiết)
 4. Build dự án: npm run build
 5. Chạy dự án: npm run preview
+
+
+===
+Luồng chạy React 
+
+1.Code trong Foder SRC
+2.Các file code React sẽ được đọc và chuyển đổi thành Html , Css , Js nhờ vào thư viện Vite
+3.Đưa ra file index.html để chạy
