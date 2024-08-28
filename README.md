@@ -34,3 +34,9 @@ Luồng chạy React
 1. viết style trực tiếp vào code :
            đây định nghĩa là JS
    style = { {trong này tượng trưng cho đối tượng object} }
+
+2. Props (kế thừa)
+- Props (Property) : truyền data giữa các component
+- Props : là 1 biến object
+
+VD : thằng cha truyền Props cho thằng con

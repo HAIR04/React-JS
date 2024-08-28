@@ -7,7 +7,13 @@ const SecondComponent = () => {
 
 const ThirdComponent = () => {
     return(
+        <>
+        
         <div> Đã có người yêu </div> 
+       
+        </>
+     
+
        
         
     )

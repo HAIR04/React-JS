@@ -13,7 +13,7 @@ const MyComponent = () => {
       
         //Không muốn vỡ layout khi css thì hãy bọc trong <> (Fragment)
         <>
-          
+           <div>{console.log("Và chưa có vợ")}</div>
           <h1 className="text_firs" 
            style={
             {borderRadius : "20px"}
