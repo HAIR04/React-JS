@@ -14,7 +14,7 @@ const TodoData = (props) =>{
                 return(
                     <div className={`todo-item`} key={item.id}>
                      <div style={{borderBottom : "1px solid black" , 
-                             padding: "10px 0 " , width: "90%"}}>{item.name} 
+                             padding: "10px 5px " , width: "90%"}}>{item.name} 
                      </div>
                         <button>Delete</button>                  
                     </div>

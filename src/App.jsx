@@ -9,11 +9,7 @@ import { useState } from "react"
 
 
 const App = () => {
-  const [todoList , setTodoList] = useState([
-    // {id: 1 , name : "Thức dậy"},
-    // {id: 2 , name : "Ăn sáng"},
-    
-  ])
+  const [todoList , setTodoList] = useState([  ])
  
    const addNewTodo = (name)=>{
     const newTodo = {
@@ -34,14 +30,33 @@ const App = () => {
         <TodoNew
           addNewTodo = {addNewTodo}/>
 
+  {/*Cách tối ưu  */}
+  {/* Nếu độ dài > 0 thì thực thi phần này */}
+     {todoList.length > 0 ?
        <TodoData
        todoList = {todoList}
-    
        />
-
+      // Còn không thì thự thi phần này
+       :
        <div className="todo-image">
         <img src={reactLogo} className="logo"></img>
        </div>
+        }
+
+{/* CÁCH newbie */}
+          {/* Nếu độ dài > 0 thì mới hiện thanh data */}
+      {/* {todoList.length > 0 && 
+       <TodoData
+       todoList = {todoList}
+       />
+       }
+       {/* DDkien : nếu độ dài của totolist = 0 thì hiển thị ra còn không thì ẩn  */}
+      {/* Câu điều kiện : nếu... thì (&&) */}
+    {/* {todoList.length === 0 && 
+       <div className="todo-image">
+        <img src={reactLogo} className="logo"></img>
+       </div>
+       } */} 
     </div>
   )
 }
