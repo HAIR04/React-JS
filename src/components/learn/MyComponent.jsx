@@ -18,7 +18,7 @@ const MyComponent = () => {
            style={
             {borderRadius : "20px"}
           }>  Đặng {name}</h1> 
-
+        
          {/* Thay class -> className */}
           <div className="child">Học : CNTT năm {number}</div>
         </>

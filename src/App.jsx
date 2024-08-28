@@ -14,18 +14,23 @@ const App = () => {
     phone : "0964445201",
     email : "okds@gmail.com"
    }
+   const newFunction = (name)=>{
+    alert(`call me ${name}`)
+   }
   return (
     
     <div className="todo-container">
 
       <div className="todo-title">TODO LIST</div>
 
-        <TodoNew/>
+        <TodoNew
+          newFunction = {newFunction}/>
 
        <TodoData
        name = {name}
        age = {age}
        data = {data}
+    
        />
 
        <div className="todo-image">
