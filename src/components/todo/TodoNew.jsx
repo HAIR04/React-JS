@@ -5,7 +5,7 @@ const TodoNew = (props) => {
     //useState hook
     // const ValueInput = "okd"
         //Giá trị ban đầu      //Đây là function
-    const [ValueInput ,          setValueInput]     = useState("sad")
+    const [ValueInput ,          setValueInput]     =        useState("")
 
     const {addNewTodo} = props
     

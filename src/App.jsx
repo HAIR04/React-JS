@@ -10,13 +10,11 @@ import { useState } from "react"
 
 const App = () => {
   const [todoList , setTodoList] = useState([
-    {id: 1 , name : "Thức dậy"},
-    {id: 2 , name : "Ăn sáng"},
+    // {id: 1 , name : "Thức dậy"},
+    // {id: 2 , name : "Ăn sáng"},
+    
   ])
-   const data = {
-    phone : "0964445201",
-    email : "okds@gmail.com"
-   }
+ 
    const addNewTodo = (name)=>{
     const newTodo = {
       id: randomIntFromInterval(1,1000),
@@ -37,8 +35,6 @@ const App = () => {
           addNewTodo = {addNewTodo}/>
 
        <TodoData
-
-       data = {data}
        todoList = {todoList}
     
        />
