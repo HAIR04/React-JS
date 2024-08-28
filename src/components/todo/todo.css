@@ -2,7 +2,7 @@
     background-color: rgb(147, 144, 139);
     width: 50%;
     margin: auto;
-    height: 50vh;
+    
     border: 3px solid black;
 }
 .todo-title{
@@ -34,8 +34,19 @@
     
     background-color: rgb(255, 213, 2);
     margin: auto;
-    width: 50%;
+    width: 90%;
+   
     border-radius: 10px;
+}
+.todo-item{
+
+  display: flex;
+  justify-content: space-around;
+}
+.todo-item button{
+  background-color: rgb(246, 53, 75);
+
+  border-radius: 10px;
 }
 /*  */
 
