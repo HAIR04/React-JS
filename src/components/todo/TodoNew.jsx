@@ -5,15 +5,15 @@ const TodoNew = (props) => {
     //useState hook
     // const ValueInput = "okd"
         //Giá trị ban đầu      //Đây là function
-    const [ValueInput ,          setValuaInput]     = useState("sad")
+    const [ValueInput ,          setValueInput]     = useState("sad")
 
-    const {newFunction} = props
+    const {addNewTodo} = props
     
     const handleClick = ()=>{
-       console.log("Check valueinput" , ValueInput)
+        addNewTodo(ValueInput)
     }
    const handleOnChange = (name) =>{
-        setValuaInput(name)
+        setValueInput(name)
     }
     return(
         <div className="todo-new">

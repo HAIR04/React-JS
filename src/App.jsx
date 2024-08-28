@@ -19,9 +19,16 @@ const App = () => {
     phone : "0964445201",
     email : "okds@gmail.com"
    }
-   const newFunction = (name)=>{
-    alert(`call me ${name}`)
+   const addNewTodo = (name)=>{
+    const newTodo = {
+      id: randomIntFromInterval(1,1000),
+      name : name
+    }
+    setTodoList([...todoList, newTodo])
    }
+   const randomIntFromInterval= (min, max)=> { // min and max included
+    return Math.floor(Math.random() * (max - min + 1) + min);
+    }
   return (
     
     <div className="todo-container">
@@ -29,7 +36,7 @@ const App = () => {
       <div className="todo-title">TODO LIST</div>
 
         <TodoNew
-          newFunction = {newFunction}/>
+          addNewTodo = {addNewTodo}/>
 
        <TodoData
        name = {name}
