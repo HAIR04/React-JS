@@ -40,3 +40,8 @@ Luồng chạy React
 - Props : là 1 biến object
 
 VD : thằng cha truyền Props cho thằng con
+
+===
+HAI THỨ QUAN TRỌNG PHẢI HỌC KÍ
+  1. Props
+  2. useState
