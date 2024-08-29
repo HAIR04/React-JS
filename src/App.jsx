@@ -3,6 +3,8 @@ import TodoData from "./components/todo/TodoData"
 import TodoNew from "./components/todo/TodoNew"
 import reactLogo from './assets/react.svg'
 import { useState } from "react"
+import Header from "./components/layout/header"
+import Footer from "./components/layout/footer"
 //component = html + css + js
 //Cú pháp arrow function () =>{}
 // Luôn viết hoa chữ cái đầu của Function
@@ -29,7 +31,8 @@ const App = () => {
        setTodoList(newTodo)
     }
   return (
-    
+    <>
+    <Header/>
     <div className="todo-container">
 
       <div className="todo-title">TODO LIST</div>
@@ -66,6 +69,8 @@ const App = () => {
        </div>
        } */} 
     </div>
+    <Footer/>
+    </>
   )
 }
 
