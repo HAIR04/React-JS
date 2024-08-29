@@ -102,6 +102,15 @@ Dôi khi không cần fix nó vẫn chạy , fix được thì càng tốt vì s
 # Tại sao không dùng key mặc định của mảng cho các phần tử ? 
 Vì khi thêm sản phẩm mảng tự sinh key ứng với phần tử đó , khi phần tử đó bị xóa thì key của phần tử đó sẽ truyền lại cho cho phần tử bên cạnh , như vậy thì sẽ không tối ưu hiệu năng và đôi khi sinh ra lag.
 
+===============================================================================================================================
+
+# Chidren : 
+ - Khi router để trong Chidren sẽ được gọi là router con và nó sẽ KẾ THỪA lại layout của cả thằng Cha
+
+ # Outlet : 
+ - Sau khi kế thừa thằng cha thì vị trí thằng con sẽ được đặt vào đâu thì sẽ phụ thuộc vào vị trí của Outlet
+
+
 
 
 

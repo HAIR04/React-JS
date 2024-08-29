@@ -14,7 +14,17 @@ import './styles/global.css'
 
     {
     path: "/",
-    element:  <App />
+    element:  <App />,
+    children : [
+      {
+        path: "/users",
+        element: <UsersPage/>
+      },
+      {
+        path: "/products",
+        element: <ProductsPage/>
+      },
+    ]
     },
     {
       path: "/login",
@@ -24,14 +34,7 @@ import './styles/global.css'
       path: "/register",
       element: <RegisterPage/>
     },
-    {
-      path: "/users",
-      element: <UsersPage/>
-    },
-    {
-      path: "/products",
-      element: <ProductsPage/>
-    },
+  
     ]); 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
