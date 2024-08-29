@@ -110,6 +110,12 @@ Vì khi thêm sản phẩm mảng tự sinh key ứng với phần tử đó , k
  # Outlet : 
  - Sau khi kế thừa thằng cha thì vị trí thằng con sẽ được đặt vào đâu thì sẽ phụ thuộc vào vị trí của Outlet
 
+# Điều hướng không reload trang
+
+- Nếu không cần css vào nút trên thanh điều hướng : LINK
+
+- Nếu cần Css vào : NavLink (vẫn CSS bình thường và nó sẽ tự nhận biết Css ứng với event) -> Đây là nó áp dung Library để xử lí cho mình 
+
 
 
 
