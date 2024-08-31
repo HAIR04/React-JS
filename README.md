@@ -3,7 +3,6 @@
 Template này được sử dụng cho series React Ultimate (Vite)
 
 ===============================================================================================================================
-
 # Các bước cài đặt: (chế độ development)
 
 1. clone code
@@ -12,7 +11,6 @@ Template này được sử dụng cho series React Ultimate (Vite)
 4. Chạy dự án: npm run dev
 
 ===============================================================================================================================
-
 # Cách chạy tại chế độ production:
 
 1. clone code
@@ -30,7 +28,6 @@ Template này được sử dụng cho series React Ultimate (Vite)
 
 ===============================================================================================================================
                                         ** Khái Niệm **
-
 # ĐỊNH NGHĨA VỀ LIBRARY , FRAMEWORK
 - code bình thường -> file đơn lẻ
 
@@ -41,14 +38,12 @@ Template này được sử dụng cho series React Ultimate (Vite)
 - môi trường thực thi -> platform
 
 - ctrl + ` : mở terminal
-
 # React JS : 
 - Gọi tắt là React , là một THƯ VIỆN (library) được fb phát triển và có thể ứng dụng vào mọi trang web
 
 - React khác Angular (google) và Vue (con lai React + Angular) ở chỗ 2 thằng kia là Framework , còn React là Thư viện
 
 - Vì nó là Library nên nó chỉ chịu trách nhiệm render thông qua Props/UseState, và nếu muốn thêm tính năng như router, ... thì chúng ta phải tự làm 
-
 # React có 2 giai đoạn 
   + GĐ 1 : 2013 - T4/2022 : được coi là 1 Thư Viện , sử dụng cơ chế CSR (client side rendering) và SPA
 
@@ -58,8 +53,6 @@ Template này được sử dụng cho series React Ultimate (Vite)
 - Môt Website khi click vào mà chuyển trang reload lại thì đang dùng SSR (server side rendering)
 
 - Môt Website khi click vào mà chuyển trang KHÔNG reload lại thì đang dùng SPA (single page application)
-
-
 # Có 2 cách dử dụng React :
  + CÁCH 1 : Sử dụng CSR 
    \Cho các web có nội dung thay đổi liên tục - real time (mess , tỉ giá coin)
@@ -103,20 +96,19 @@ Dôi khi không cần fix nó vẫn chạy , fix được thì càng tốt vì s
 Vì khi thêm sản phẩm mảng tự sinh key ứng với phần tử đó , khi phần tử đó bị xóa thì key của phần tử đó sẽ truyền lại cho cho phần tử bên cạnh , như vậy thì sẽ không tối ưu hiệu năng và đôi khi sinh ra lag.
 
 ===============================================================================================================================
-
 # Chidren : 
  - Khi router để trong Chidren sẽ được gọi là router con và nó sẽ KẾ THỪA lại layout của cả thằng Cha
-
  # Outlet : 
  - Sau khi kế thừa thằng cha thì vị trí thằng con sẽ được đặt vào đâu thì sẽ phụ thuộc vào vị trí của Outlet
-
 # Điều hướng không reload trang
+
 
 - Nếu không cần css vào nút trên thanh điều hướng : LINK
 
 - Nếu cần Css vào : NavLink (vẫn CSS bình thường và nó sẽ tự nhận biết Css ứng với event) -> Đây là nó áp dung Library để xử lí cho mình 
+# Các cách Css
 
-
-
-
-
+1. Css thường
+2. Css thường + module (Tránh tình trạng trùng class)
+3. Css bằng SASS
+4. Taiwin
