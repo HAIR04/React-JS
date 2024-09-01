@@ -111,3 +111,18 @@ Vì khi thêm sản phẩm mảng tự sinh key ứng với phần tử đó , k
 4. Taiwin
 # API
 - LÀ sự kết hợp của link url + các Method (GET , POST , ...)
+
+* Mô hình chiều đi (Request)
+FE -> Gọi tới Axios -> interceptor xử lý request (Gán thêm thoog tin ) -> BE
+
+* Mô hình chiều về (response)
+BE -> interceptor xử lý response (format data) -> FE
+# Các Giai Đoạn Của 1 App 
+1. Mount (Chèn Html , css , code)
+- Khi vào Web : dịch code (JSX) -> render ra view cho người dùng
+
+2. Update
+-Vẽ lại giao diện (Mount) -> sẽ dịch lại code (JSX) -> render ra (động như coin)
+
+3. UnMount
+- Xóa Html để vẽ cái mới khi chuyển trang
