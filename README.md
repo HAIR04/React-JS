@@ -81,9 +81,9 @@ Template này được sử dụng cho series React Ultimate (Vite)
 VD : thằng cha truyền Props cho thằng con
 
 3. Hook (useState) : trạng thái 
-- Có biến (function) thể tại sử dụng nhiều lần 
+- Có biến (function) để có thể tại sử dụng nhiều lần 
 ===============================================================================================================================
-HAI THỨ QUAN TRỌNG PHẢI HỌC KÍ
+HAI THỨ QUAN TRỌNG PHẢI HỌC Kĩ
   1. Props
   2. useState
 
@@ -98,17 +98,16 @@ Vì khi thêm sản phẩm mảng tự sinh key ứng với phần tử đó , k
 ===============================================================================================================================
 # Chidren : 
  - Khi router để trong Chidren sẽ được gọi là router con và nó sẽ KẾ THỪA lại layout của cả thằng Cha
- # Outlet : 
+# Outlet : 
  - Sau khi kế thừa thằng cha thì vị trí thằng con sẽ được đặt vào đâu thì sẽ phụ thuộc vào vị trí của Outlet
 # Điều hướng không reload trang
-
-
 - Nếu không cần css vào nút trên thanh điều hướng : LINK
 
 - Nếu cần Css vào : NavLink (vẫn CSS bình thường và nó sẽ tự nhận biết Css ứng với event) -> Đây là nó áp dung Library để xử lí cho mình 
 # Các cách Css
-
 1. Css thường
 2. Css thường + module (Tránh tình trạng trùng class)
 3. Css bằng SASS
 4. Taiwin
+# API
+- LÀ sự kết hợp của link url + các Method (GET , POST , ...)

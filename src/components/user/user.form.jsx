@@ -2,14 +2,25 @@
  import { Input } from 'antd';
  import { Button } from 'antd';
 import { useState } from 'react';
+import axios from 'axios';
  const UserForm = () =>{
+
     const [FullName , SetFullName] = useState("")
     const [Email , SetEmail] = useState("")
     const [Password , SetPassword] = useState("")
     const [PhoneNumber , SetPhoneNumber] = useState("")
    
     const handleClickBtn = () =>{
-    console.log("ok" ,{ FullName , Email , Password , PhoneNumber})
+        const URL_BACKEND = "http://localhost:8080/api/v1/user"
+        const data = {
+        //trường đặt bên BE   //Phần này tạo bên BE
+            fullName        : FullName,
+            email           : Email,
+            password        : Password,
+            phone           : PhoneNumber,
+        }
+        axios.post(URL_BACKEND , data)
+    
     }
 return(
     <div className="user-form" style={{width : "50%" , margin : "auto"}}>
@@ -49,7 +60,8 @@ return(
                 
                 <div>
                     <Button type="primary" 
-                    onClick={handleClickBtn}>Create User</Button>
+                    onClick={handleClickBtn}
+                    >Create User</Button>
                  </div>
             </div>
             
